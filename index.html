@@ -23,7 +23,7 @@
                             </v-flex>
                             <v-flex xs12 sm6> -->
 
-            <v-select label="Select" v-bind:items="people" v-model="e11" item-text="name" item-value="name" max-height="auto" autocomplete multiple>
+            <v-select label=" Want to set your business on the first page, increase your sales or need a new website?" v-bind:items="people" v-model="e11" item-text="name" item-value="name" max-height="auto" autocomplete multiple>
                 <template slot="selection" scope="data">
             {{ data.item.name }} - {{data.item.group}}
           </template>
@@ -61,54 +61,79 @@
             el: "#app",
             data() {
                 let srcs = {
-                    1: "/static/doc-images/lists/1.jpg",
-                    2: "/static/doc-images/lists/2.jpg",
+                    1: "https://www.svgrepo.com/show/220473/seo.svg",
+                    2: "https://www.svgrepo.com/show/323857/digital-trace.svg",
                     3: "/static/doc-images/lists/3.jpg",
                     4: "/static/doc-images/lists/4.jpg",
                     5: "/static/doc-images/lists/5.jpg",
+                    6: "/static/doc-images/lists/5.jpg",
+                    7: "/static/doc-images/lists/5.jpg",
+                    8: "/static/doc-images/lists/5.jpg",
                 };
 
                 return {
                     e11: [],
                     people: [{
-                        header: "Group 1",
-                    }, {
-                        name: "Sandra Adams",
-                        group: "Group 1",
-                        avatar: srcs[1],
-                    }, {
-                        name: "Ali Connors",
-                        group: "Group 1",
-                        avatar: srcs[2],
-                    }, {
-                        name: "Trevor Hansen",
-                        group: "Group 1",
-                        avatar: srcs[3],
-                    }, {
-                        name: "Tucker Smith",
-                        group: "Group 1",
-                        avatar: srcs[2],
-                    }, {
-                        divider: true,
-                    }, {
-                        header: "Group 2",
-                    }, {
-                        name: "Britta Holt",
-                        group: "Group 2",
-                        avatar: srcs[4],
-                    }, {
-                        name: "Jane Smith ",
-                        group: "Group 2",
-                        avatar: srcs[5],
-                    }, {
-                        name: "John Smith",
-                        group: "Group 2",
-                        avatar: srcs[1],
-                    }, {
-                        name: "Sandra Williams",
-                        group: "Group 2",
-                        avatar: srcs[3],
-                    }, ],
+                            //header: "Group 1",
+                        }, {
+                            name: "SEO",
+                            group: "Best Team for SEO",
+                            avatar: srcs[1],
+                        }, {
+                            name: "Digital Strategy",
+                            group: "Group 1",
+                            avatar: srcs[2],
+                        }, {
+                            name: "Web Design",
+                            group: "Group 1",
+                            avatar: srcs[3],
+                        }, {
+                            name: " Facebook Ads",
+                            group: "Group 1",
+                            avatar: srcs[2],
+                        }, {
+                            name: "Google Ads",
+                            group: "Group 1",
+                            avatar: srcs[2],
+                        }, {
+                            name: "Social Media Marketing",
+                            group: "Group 1",
+                            avatar: srcs[2],
+                        }, {
+                            name: "Analytics Integration",
+                            group: "Group 1",
+                            avatar: srcs[2],
+                        }, {
+                            name: "E-Commerce Marketing
+                            ",
+                            group: "Group 1",
+                            avatar: srcs[2],
+                        },
+
+
+                        /*
+                                        {
+                                            divider: true,
+                                        }, {
+                                            header: "Group 2",
+                                        }, {
+                                            name: "Britta Holt",
+                                            group: "Group 2",
+                                            avatar: srcs[4],
+                                        }, {
+                                            name: "Jane Smith ",
+                                            group: "Group 2",
+                                            avatar: srcs[5],
+                                        }, {
+                                            name: "John Smith",
+                                            group: "Group 2",
+                                            avatar: srcs[1],
+                                        }, {
+                                            name: "Sandra Williams",
+                                            group: "Group 2",
+                                            avatar: srcs[3],
+                                        },*/
+                    ],
                 };
             },
         });
