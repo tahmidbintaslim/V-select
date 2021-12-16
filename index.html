@@ -24,27 +24,21 @@
                             <v-flex xs12 sm6>
                                 <v-select label=" Want to set your business on the first page, increase your sales or need a new website?" v-bind:items="people" v-model="e11" item-text="name" item-value="name" max-height="auto" autocomplete multiple>
                                     <template slot="selection" scope="data">
-                      {{ data.item.name }} - {{data.item.group}}
-                    </template>
+                                        {{ data.item.name }} - {{data.item.group}}
+                                    </template>
                                     <template slot="item" scope="data">
-                      <template v-if="typeof data.item !== 'object'">
-                        <v-list-tile-content
-                          v-text="data.item"
-                        ></v-list-tile-content>
-                      </template>
+                                        <template v-if="typeof data.item !== 'object'">
+                                            <v-list-tile-content v-text="data.item"></v-list-tile-content>
+                                        </template>
                                     <template v-else>
-                        <v-list-tile-avatar>
-                          <img v-bind:src="data.item.avatar" />
-                        </v-list-tile-avatar>
-                        <v-list-tile-content>
-                          <v-list-tile-title
-                            v-html="data.item.name"
-                          ></v-list-tile-title>
-                          <v-list-tile-sub-title
-                            v-html="data.item.group"
-                          ></v-list-tile-sub-title>
-                        </v-list-tile-content>
-                      </template>
+                                            <v-list-tile-avatar>
+                                                <img v-bind:src="data.item.avatar" />
+                                            </v-list-tile-avatar>
+                                            <v-list-tile-content>
+                                                <v-list-tile-title v-html="data.item.name"></v-list-tile-title>
+                                                <v-list-tile-sub-title v-html="data.item.group"></v-list-tile-sub-title>
+                                            </v-list-tile-content>
+                                        </template>
                                     </template>
                                 </v-select>
                             </v-flex>
@@ -65,12 +59,12 @@
                 let srcs = {
                     1: "https://www.svgrepo.com/show/220473/seo.svg",
                     2: "https://www.svgrepo.com/show/323857/digital-trace.svg",
-                    3: "/static/doc-images/lists/3.jpg",
-                    4: "/static/doc-images/lists/4.jpg",
-                    5: "/static/doc-images/lists/5.jpg",
-                    6: "/static/doc-images/lists/5.jpg",
-                    7: "/static/doc-images/lists/5.jpg",
-                    8: "/static/doc-images/lists/5.jpg",
+                    3: "https://www.svgrepo.com/show/317771/web-euro.svg",
+                    4: "https://www.svgrepo.com/show/317771/web-euro.svg",
+                    5: "https://www.svgrepo.com/show/317771/web-euro.svg",
+                    6: "https://www.svgrepo.com/show/317771/web-euro.svg",
+                    7: "https://www.svgrepo.com/show/317771/web-euro.svg",
+                    8: "https://www.svgrepo.com/show/317771/web-euro.svg",
                 };
 
                 return {
@@ -92,24 +86,24 @@
                         }, {
                             name: " Facebook Ads",
                             group: "Group 1",
-                            avatar: srcs[2],
+                            avatar: srcs[4],
                         }, {
                             name: "Google Ads",
                             group: "Group 1",
-                            avatar: srcs[2],
+                            avatar: srcs[5],
                         }, {
                             name: "Social Media Marketing",
                             group: "Group 1",
-                            avatar: srcs[2],
+                            avatar: srcs[6],
                         }, {
                             name: "Analytics Integration",
                             group: "Group 1",
-                            avatar: srcs[2],
+                            avatar: srcs[7],
                         }, {
                             name: "E-Commerce Marketing
                             ",
                             group: "Group 1",
-                            avatar: srcs[2],
+                            avatar: srcs[8],
                         },
 
 
